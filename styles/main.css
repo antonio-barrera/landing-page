@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(45deg, cyan, #FFF);
+}
+
+#header-img {
+    margin-left: 25px;
+    width: 175px;
+}
+
+#nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    margin: 25px;
+    font-weight: bold;
+}
+
+#hero {
+    margin-top: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(45deg, cyan, #FFF);
+    text-align: center;
+}
+
+#hero-info {
+    width: calc(100%/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-heading {
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+#hero-caption {
+    max-width: 400px;
+}
+
+#hero-img {
+    width: calc(100%/2);
+    height: auto;
+}
+
+#email {
+    max-width: 275px;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    margin: 20px auto 10px auto;
+    border-radius: 5px;
+}
+
+#submit {
+    max-width: 150px;
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    background: rgb(128, 255, 0);
+    font-weight: bold;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+#features {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.feature-img {
+    width: 100px;
+    height: auto;
+}
+
+.feature-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(100%/3);
+    margin: 5px;
+    padding: 10px;
+    height: 270px;
+}
+
+#how-it-works {
+    margin: 100px auto;
+    width: 70%;
+    height: auto;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-info {
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(100%/3);
+    margin: 10px;
+}
+
+.product-name {
+    background: rgb(202, 202, 202);
+    font-weight: bolder;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.product-details {
+    list-style: none;
+    margin: 20px auto;
+}
+
+.detail {
+    margin: 15px;
+}
+
+.product-btn {
+    width: 125px;
+    height: 40px;
+    margin: 10px auto;
+    font-weight: bold;
+    border: none;
+    background: rgb(255, 217, 0);
+}
+
+#footer {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(45deg, cyan, #FFF);
+    text-align: right;
+    padding: 20px;
+}
+
+#footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.footer-link {
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+    }
+    #header-img {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .nav-link {
+        margin: 30px;
+    }
+    #hero-heading {
+        font-size: 20px;
+    }
+    .feature-img {
+        width: 75px;
+    }
+    .feature-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .feature-desc {
+        font-size: 14px;
+    }
+    #products {
+        flex-direction: column;
+    }
+    .product-info {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-link {
+        font-size: 14px;
+    }
+    #hero {
+        height: 600px;
+        flex-direction: column;
+    }
+    #hero-img {
+        margin-top: 75px;
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-link {
+        font-size: 14px;
+    }
+    #hero-info {
+        width: 75%;
+    }
+    #hero-img {
+        width: 75%;
+        height: auto;
+    }
+    #features {
+        flex-direction: column;
+        width: 75%;
+        margin: auto;
+    }
+    .feature-info {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-link {
+        margin: 10px;
+    }
+    .product-info {
+        width: 75%;
+    }
+}
